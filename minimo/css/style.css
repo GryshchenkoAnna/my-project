@@ -1,0 +1,268 @@
+body {
+    font-family: 'Playfair Display', serif;
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+    background: white;
+    line-height: 24px;
+}
+
+.top {
+    position: relative;
+    background: url("../images/main.png") no-repeat;
+    width: 1062px;
+    height: 675px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    padding-top: 60px;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: darkgrey;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 100px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #626262;
+}
+
+nav ul li a:hover {
+    color: darkgrey;
+}
+
+.contant {
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comment {
+    flex-basis: 920px;
+    color: #b4ad9e;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #626262;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #626262;
+}
+
+.wr {
+    margin: 0 auto;
+    width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+
+.post {
+    width: 420px;
+    height: 510px;
+    margin-top: 130px;
+}
+
+.image {
+    width: 420px;
+    height: 280px;
+    margin-bottom: 30px;
+}
+
+.text {
+    width: 420px;
+}
+
+.photodiary .contant1, 
+.photodiary .contant3 {
+    flex-grow: 1;
+} 
+
+.contant1 .image {
+    background: url("../images/post-1.png") no-repeat;
+}
+
+.contant2 .image {
+    background: url("../images/post-2.png") no-repeat;
+}
+
+.contant3 .image {
+    background: url("../images/post-3.png") 0 -46px no-repeat;
+}
+
+.contant4 .image {
+    background: url("../images/post-4.png") no-repeat;
+}
+
+span.title {
+    color: #b4ad9e;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif; 
+}
+
+h2 {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+}
+
+.newletter {
+    background: #f0f0f0;
+    height: 280px;
+    padding-top: 65px;
+}
+
+.addres h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 85px;
+}
+
+.pointer {
+    margin: auto;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+ .email{
+    color: #626262;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif; 
+}
+
+.arrow {
+    background: url("../images/arrow.png") no-repeat;
+    width: 30px;
+    height: 17px;
+    margin-top: 4px;
+}
+
+hr {
+    background-color: #333333;
+    width: 400px;  
+}
+
+.contant5 .image {
+    background: url("../images/post-5.png") 0 -263px no-repeat;
+}
+
+.contant6 .image {
+    background: url("../images/post-6.png") no-repeat;
+}
+
+.contant5,
+.contant6 {
+    flex-grow: 1;
+}
+
+button {
+    background: white;
+    width: 164px;
+    height: 60px;
+    border: 1px solid #626262;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin: 0 360px 500px;
+}
+
+button a {
+    text-decoration: none;
+    color: #626262;
+}
+
+button a:hover {
+   color: white;
+}
+
+button:hover{
+    background: darkgrey;
+}
+
+.buttom {
+    height: 100px;
+    background: #f0f0f0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1062px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.buttom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.buttom li {
+    margin-left: 30px;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+}
+
+.buttom li:first-child {
+    margin: 0;
+}
+
+.buttom li a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 20px;
+}
+
+.buttom li a:hover{
+    color: darkgrey;
+}
+
+
+
+
+
+
+
