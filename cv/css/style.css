@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f8ff;
+  font-family: "Pathway Gothic One", sans-serif;
+}
+
+.wrapper {
+  width: 900px;
+  margin: auto;
+}
+
+.title {
+  background-color: #f3f0e2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-subtile {
+  border-top: 3px solid #eac8b5;
+  border-bottom: 3px solid #eac8b5;
+  padding: 20px 0 20px 0;
+  color: #db6a68;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.subtile {
+  color: #db6a68;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-top: 20px;
+}
+
+.menu {
+  border-top: 3px solid #eac8b5;
+  border-bottom: 3px solid #eac8b5;
+  text-align: center;
+  background-color: #eecad4;
+}
+
+.menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: #19293b;
+  text-transform: uppercase;
+  padding: 20px 50px;
+}
+
+.menu li a:hover {
+  background: #d88686;
+  color: #f0f8ff;
+}
+
+.main-foto {
+  padding: 40px 60px;
+}
+
+.main-foto img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgba(235, 245, 255, 1);
+  border: 2px solid rgba(235, 245, 255, 1);
+}
+
+.aside {
+  margin-bottom: 20px;
+}
+
+.aside-left,
+.aside-right
+ {
+  width: 45%;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(235, 245, 255, 1);
+  vertical-align: top;
+}
+
+.aside-left {
+ margin-right: 87px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: right;
+  border-top: 3px solid #eac8b5;
+  background-color: #f3f0e2;
+}
+
+p.copyright {
+  font-size: 14px;
+}
