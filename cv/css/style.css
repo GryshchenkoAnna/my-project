@@ -14,10 +14,13 @@ body {
   margin: auto;
 }
 
-.title {
-  background-color: #f3f0e2;
+.profile {
   padding-top: 40px;
-  padding-bottom: 40px;
+  background-color: #f3f0e2;
+}
+
+.title {
+  margin-bottom: 40px;
 }
 
 .main-subtile {
@@ -65,7 +68,10 @@ body {
 }
 
 .main-foto {
-  padding: 40px 60px;
+  padding: 0 60px;
+  background-color: #f0f8ff;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .main-foto img {
@@ -82,8 +88,7 @@ body {
 }
 
 .aside-left,
-.aside-right
- {
+.aside-right {
   width: 45%;
   display: inline-block;
   border-radius: 5px;
@@ -93,7 +98,7 @@ body {
 }
 
 .aside-left {
- margin-right: 87px;
+  margin-right: 87px;
 }
 
 .footer {
