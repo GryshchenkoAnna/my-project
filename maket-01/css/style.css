@@ -47,6 +47,7 @@ body {
 .link {
   text-decoration: none;
   color: #626262;
+  display: block;
 }
 
 .link:hover {
