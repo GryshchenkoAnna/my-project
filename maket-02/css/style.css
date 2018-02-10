@@ -95,18 +95,125 @@ body {
 }
 
 .gallery-iteam {
-  flex-basis: 24%;
+  flex-basis: 23%;
+  margin-bottom: 30px;
 }
 
-.image {
-
+.gallery-iteam:nth-last-child(-n + 4) {
+  margin-bottom: 0;
 }
 
-img {
-  background-color: rebeccapurple;
+.products {
+  margin-bottom: 105px;
+}
+
+.gallery-iteam img {
   display: block;
   width: 100%;
-  background-size: contain;
+  height: 255px;
+  background-size: cover;
   background-position: center;
-  height: 264px;
+}
+
+.product {
+  padding-left: 14px;
+  background-color: #323232;
+  position: relative;
+}
+
+.product:hover {
+  background-color: #1abc9c;
+}
+
+.name-product {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+}
+
+.price {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: -0.36px;
+  background-color: rgba(140, 140, 140, 0.6);
+  padding-left: 5px;
+  padding-right: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.list-news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-news {
+  flex-basis: 32%;
+}
+
+.post-news img {
+  display: block;
+  width: 100%;
+  height: 261px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 14px;
+}
+
+.subtitle {
+  color: #555252;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.36px;
+  margin-bottom: 10px;
+}
+
+.subunderline {
+  width: 136px;
+  display: block;
+  border: 2px solid #4ec6ab;
+  margin-bottom: 30px;
+}
+
+.text {
+  color: #555252;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  width: 159px;
+  height: 51px;
+  border-radius: 3px;
+  background-color: #4ec6ab;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 51px;
+  letter-spacing: -0.32px;
+  text-align: center;
+}
+
+.btn:hover {
+  box-shadow: 0px 1px 34px 4px rgba(54, 201, 118, 0.72);
+  color: #4ec6ab;
+  background-color: #ffffff;
 }
