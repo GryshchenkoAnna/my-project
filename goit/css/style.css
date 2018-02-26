@@ -1,0 +1,279 @@
+.wrapper {
+  background-image: url("../img/layer-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container {
+  min-width: 320px;
+  max-width: 1024px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.promo {
+  text-align: center;
+  margin: auto;
+}
+
+.logo {
+  margin: auto;
+}
+
+.logo-link {
+  display: block;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.promo-slogan {
+  display: block;
+  color: #ffffff;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo-text {
+  margin: auto;
+}
+
+.text-highlighted {
+  color: #ffffff;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+}
+
+.colon,
+.numbers {
+  color: #ffffff;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 700;
+}
+
+.colon {
+  align-self: center;
+}
+
+.numbers {
+  background-color: rgba(0, 0, 0, 0.6);
+  flex: 0 1 25px;
+  border-radius: 50%;
+  padding: 18px 14px;
+}
+
+.form-text {
+  color: #ff6c00;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin: auto;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #ff6c00;
+  width: 100%;
+}
+
+.form {
+  width: 262px;
+  margin: auto;
+}
+
+.form-line {
+  background-color: #ff6c00;
+  margin: auto;
+}
+
+.footnote {
+  margin: auto;
+}
+
+.footnote-text {
+  color: #ffffff;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: auto;
+}
+
+input::placeholder {
+  color: #ff6c00;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* MOBILE */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .logo {
+    width: 59px;
+    height: 18px;
+    margin-bottom: 60px;
+  }
+
+  .promo-slogan {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+
+  .promo-text {
+    font-size: 12px;
+    line-height: 17.55px;
+    max-width: 268px;
+  }
+
+  .promo {
+    margin-bottom: 40px;
+  }
+
+  #countdown {
+    margin-bottom: 80px;
+  }
+
+  .numbers,
+  .colon {
+    font-size: 27px;
+    letter-spacing: 2.56px;
+  }
+
+  .form-text {
+    font-size: 12px;
+    margin-bottom: 60px;
+    max-width: 265px;
+  }
+
+  .form-line {
+    height: 1px;
+    width: 262px;
+    margin-bottom: 150px;
+  }
+
+  .footnote-text {
+    font-size: 8px;
+    line-height: 10px;
+    max-width: 274px;
+    line-height: 10px;
+  }
+}
+
+/* TABLET */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    width: 127px;
+    height: 39px;
+    margin-bottom: 60px;
+  }
+
+  .promo-slogan {
+    font-size: 65px;
+    margin-bottom: 50px;
+  }
+
+  .promo-text {
+    font-size: 26px;
+    line-height: 37.65px;
+    max-width: 577px;
+  }
+
+  .promo {
+    margin-bottom: 49px;
+  }
+
+  #countdown {
+    margin-bottom: 85px;
+  }
+
+  .numbers,
+  .colon {
+    font-size: 58px;
+    letter-spacing: 2.56px;
+  }
+
+  .form-text {
+    font-size: 26px;
+    margin-bottom: 60px;
+    max-width: 575px;
+  }
+
+  .form-line {
+    width: 563px;
+    height: 2px;
+    margin-bottom: 150px;
+  }
+
+  .footnote-text {
+    font-size: 17px;
+    max-width: 582px;
+    line-height: 21.45px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) and (max-width: 1400px) {
+  .logo {
+    width: 95px;
+    height: 29px;
+    margin-bottom: 55px;
+  }
+
+  .promo-slogan {
+    font-size: 62px;
+    margin-bottom: 50px;
+  }
+
+  .promo-text {
+    font-size: 25px;
+    line-height: 37.65px;
+    max-width: 697px;
+  }
+
+  .promo {
+    margin-bottom: 43px;
+  }
+
+  #countdown {
+    margin-bottom: 83px;
+  }
+
+  .numbers,
+  .colon {
+    font-size: 65px;
+    letter-spacing: 2.49px;
+  }
+
+  .form-text {
+    font-size: 21px;
+    margin-bottom: 40px;
+  }
+
+  .form-line {
+    width: 451px;
+    height: 2px;
+    margin-bottom: 77px;
+  }
+
+  .footnote-text {
+    font-size: 9px;
+  }
+}
