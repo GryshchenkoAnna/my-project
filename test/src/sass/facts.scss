@@ -1,0 +1,46 @@
+.facts-wrapper {
+  background-color: #f4f4f4;
+  padding-top: 72px;
+  padding-bottom: 50px;
+}
+
+.container-facts {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.facts-list {
+  @include reset-list(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+}
+
+.facts-list-item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.number {
+  @include font($Open-Sans-Condensed, 50px, 700, normal, uppercase, #000000);
+  margin-right: 25px;
+}
+
+.name {
+  display: block;
+  @include font($Open-sans, 20px, 700, normal, uppercase, #000000);
+}
+
+.full-name {
+  display: block;
+  @include font($Open-Sans-Condensed, 16px, 400, normal, capitalize, #000000);
+}
+
+.box-content {
+  display: flex;
+}
+
+.box-name {
+  align-self: center;
+}

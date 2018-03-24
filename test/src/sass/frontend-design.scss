@@ -1,0 +1,59 @@
+.wrapper-frontend-design {
+  background-color: #ffffff;
+  padding-top: 152px;
+  padding-bottom: 54px;
+  position: relative;
+}
+
+.frontend-design {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container-quote {
+  max-width: 380px;
+  margin-right: 110px;
+}
+
+.container-article {
+  max-width: 770px;
+}
+
+.quote-title {
+  text-align: center;
+  margin-top: 18px;
+  margin-bottom: 0;
+  @include font($Open-sans, 23px, 400, normal, uppercase, #000000);
+}
+
+.article-text {
+  @include font($Open-sans, 15px, 400, normal, none, #000000);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.article-text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.article-highlight {
+  @include font($Open-sans, 15px, 700, normal, none, #000000);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.article-subtitle {
+  @include font($Open-sans, 15px, 700, normal, none, #000000);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.article-title {
+  @include font($Open-Sans-Condensed, 26px, 700, normal, none, #000000);
+  margin-bottom: 30px;
+  margin-top: 0;
+  padding: 55px 130px;
+  border: 1px solid #53d0fb;
+  text-align: center;
+}

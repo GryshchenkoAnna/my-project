@@ -1,0 +1,31 @@
+// typography
+
+$Open-Sans-Condensed: 'Open Sans Condensed', sans-serif;
+$Open-sans: 'Open Sans', sans-serif;
+
+
+@mixin font($font-family, $font-size, $font-weight, $line-height, $text-transform, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  text-transform: $text-transform;
+  color: $color;
+}
+
+// reset links
+
+@mixin reset-links($display, $text-decoration) {
+  display: $display;
+  text-decoration: $text-decoration;
+}
+
+// reset list
+
+@mixin reset-list($margin-bottom, $margin-top, $padding-left) {
+  margin-bottom: $margin-bottom;
+  margin-top: $margin-top;
+  padding-left: $padding-left;
+}
+
+  

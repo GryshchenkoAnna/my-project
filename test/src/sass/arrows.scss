@@ -1,0 +1,31 @@
+.arrows {
+}
+
+.prev {
+  @include reset-links(block, none);
+
+  &::before {
+    content: "\003C";
+    display: inline-block;
+    color: #ffffff;
+    font-size: 60px;
+    position: absolute;
+    top: 483px;
+    margin-left: 10px;
+  }
+}
+
+.next {
+  @include reset-links(block, none);
+
+  &::before {
+    content: "\003E";
+    display: inline-block;
+    color: #ffffff;
+    font-size: 60px;
+    position: absolute;
+    top: 483px;
+    right: 0;
+    padding-right: 10px;
+  }
+}

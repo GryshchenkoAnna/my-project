@@ -1,0 +1,32 @@
+.wrapper-frontend-production {
+  background-color: #ffffff;
+  padding-bottom: 142px;
+  padding-bottom: 220px;
+}
+
+.frontend-production {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.production-title {
+  @include font($Open-Sans-Condensed, 30px, 700, normal, uppercase, #000000);
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+
+.figure-matters-content {
+  margin: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.figure-box-image {
+  width: 793px;
+  height: 518px;
+}
+
+.figure-subtlety-content {
+  display: flex;
+}
