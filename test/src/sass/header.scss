@@ -58,6 +58,10 @@
 .contact-link {
   @include reset-links(block, none);
   @include font($Open-Sans-Condensed, 15px, 400, 45px, uppercase, #53d0fb);
+
+  &:hover {
+    color: rgb(247, 185, 64);;
+  }
 }
 
 .contact-link:not(:last-child) {
@@ -85,4 +89,8 @@
 .option-link {
   @include reset-links(block, none);
   @include font($Open-Sans-Condensed, 15px, 400, normal, uppercase, #53d0fb);
+
+  &:hover {
+    color: rgb(247, 185, 64);;
+  }
 }

@@ -1,7 +1,7 @@
 .wrapper-frontend-production {
   background-color: #ffffff;
-  padding-bottom: 142px;
-  padding-bottom: 220px;
+  padding-top: 142px;
+  padding-bottom: 100px;
 }
 
 .frontend-production {
@@ -9,24 +9,114 @@
   margin: 0 auto;
 }
 
-.production-title {
-  @include font($Open-Sans-Condensed, 30px, 700, normal, uppercase, #000000);
-  margin-bottom: 0;
-  margin-top: 0;
-  text-align: center;
-}
-
-.figure-matters-content {
-  margin: 0;
+.figure-matters {
   display: flex;
   flex-direction: row-reverse;
+  margin: 0;
+}
+
+.figure-subtlety {
+  display: flex;
+  margin: 0;
+  text-align: right;
+}
+
+.production-title {
+  @include font($Open-Sans-Condensed, 30px, 700, normal, uppercase, #000000);
+  margin-bottom: 41px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .figure-box-image {
   width: 793px;
   height: 518px;
+  display: inline-block;
+}
+
+.figcaption {
+  display: inline-block;
+  @include font($Open-Sans-Condensed, 20px, 700, normal, uppercase, #000000);
+  width: 300px;
+  height: 135px;
+  border: 3px solid #53d0fb;
+  background-color: rgba(255, 255, 255, 0.34);
+  text-align: center;
+  line-height: 135px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 0;
+
+  &:hover {
+    transform: scale(1.6);
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.9, 1);
+  }
+}
+
+.figure-text {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 300px;
+  @include font($Open-sans, 18px, 400, normal, normal, #000000);
+}
+
+.figure-matters-content {
+  margin-right: 30px;
 }
 
 .figure-subtlety-content {
-  display: flex;
+  margin-left: 30px;
+}
+
+.figure-button {
+  text-align: center;
+  width: 227px;
+  height: 50px;
+  background-color: rgb(83, 208, 251);
+  @include font($Open-sans, 18px, 400, 50px, lowercase, #000000);
+  @include reset-links(inline-block, none);
+  position: relative;
+  z-index: 1;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: color 0.3s;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 100%;
+    left: 0;
+    z-index: -1;
+    transition: transform 0.3s;
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  }
+
+  &::before {
+    background: rgb(83, 208, 251);
+  }
+
+  &::after {
+    background: #000000;
+  }
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    transform: translate3d(0, 100%, 0);
+  }
+
+  &:hover::after {
+    transition-delay: 0.175s;
+  }
 }
