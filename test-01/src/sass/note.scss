@@ -1,0 +1,20 @@
+.note {
+  margin-top: 12px;
+  @include push--auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note__text {
+  color: #9ca5aa;
+  font-family: "DIN Next LT Pro regular";
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.note__text--conceal {
+  font-size: 14px;
+  text-decoration: line-through;
+  font-size: 11px;
+}

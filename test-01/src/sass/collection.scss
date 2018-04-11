@@ -1,0 +1,85 @@
+.collection {
+  @include push--auto;
+
+  @media screen and (min-width: 320px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1400px) {
+    display: flex;
+  }
+}
+
+.collection__title {
+  display: flex;
+  flex-direction: column;
+  line-height: 33px;
+
+  @media screen and (min-width: 1400px) {
+    line-height: 46px;
+  }
+}
+
+.collection__word {
+  color: #000000;
+  font-family: "PF Din Text Comp Pro thin";
+  font-size: 37px;
+  font-weight: 100;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 56px;
+  }
+}
+
+.collection__word--big {
+  font-family: "PF Din Text Comp Pro xthin";
+  font-size: 42px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 60px;
+  }
+}
+
+.collection__description {
+  display: inline-block;
+  color: #000000;
+  font-family: "DIN Next LT Pro regular";
+  font-size: 9px;
+  font-weight: 300;
+  line-height: 12px;
+  flex-basis: 52%;
+  position: relative;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 14px;
+    line-height: 19px;
+    flex-basis: 54%;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 62px;
+    width: 12px;
+    top: -8px;
+    left: -22px;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+
+    @media screen and (min-width: 1400px) {
+      height: 87px;
+    }
+  }
+}

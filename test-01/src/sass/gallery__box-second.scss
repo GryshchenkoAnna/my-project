@@ -1,0 +1,228 @@
+.gallery__box-second {
+  @media screen and (min-width: 320px) {
+    flex-basis: 59%;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 5px;
+  }
+}
+
+.figure-ware {
+  height: 134px;
+  text-align: center;
+  position: relative;
+
+  @media screen and (min-width: 320px) {
+    height: 134px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 160px;
+  }
+  @media screen and (min-width: 1400px) {
+    height: 212px;
+  }
+}
+
+.figure-ware__title {
+  position: relative;
+  z-index: 1;
+  padding-top: 8px;
+
+  @media screen and (min-width: 1400px) {
+    padding-top: 16px;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 54px;
+    width: 12px;
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    top: 0;
+    left: 10px;
+
+    @media screen and (min-width: 1400px) {
+      height: 86px;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 54px;
+    width: 12px;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    top: 0;
+    right: 10px;
+
+    @media screen and (min-width: 1400px) {
+      height: 86px;
+    }
+  }
+}
+
+.figure-ware__word {
+  color: #000000;
+  font-family: "PF Din Text Comp Pro xthin";
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 20px;
+  text-transform: none;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 38px;
+    line-height: 28px;
+  }
+}
+
+.figure-ware__word--big {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.figure-ware__image {
+  @media screen and (min-width: 320px) {
+    width: 156px;
+    height: 134px;
+    position: absolute;
+    top: 0;
+  }
+  @media screen and (min-width: 768px) {
+    width: 177px;
+    height: 161px;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 247px;
+    height: 211px;
+  }
+}
+
+.price {
+  color: #000000;
+  font-family: "DIN Next LT Pro regular";
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 36px;
+  }
+}
+
+.price__unit {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: -4.7px;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 18px;
+  }
+}
+
+.price__number {
+  font-weight: 500;
+  letter-spacing: -1.45px;
+}
+
+.price__number--sub {
+  position: relative;
+  top: -14.5px;
+  margin-left: -9px;
+  font-size: 11px;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 18px;
+  }
+}
+
+.clearance-sale {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.clearance-sale__image {
+  @media screen and (min-width: 320px) {
+    width: 177px;
+    height: 264px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 177px;
+    height: 316px;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 279px;
+    height: 416px;
+  }
+}
+
+.clearance-sale__contant {
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 320px) {
+    position: absolute;
+    bottom: 90px;
+    left: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    bottom: 118px;
+  }
+  @media screen and (min-width: 1400px) {
+    bottom: 140px;
+    left: 48px;
+  }
+}
+
+.clearance-sale__title {
+  font-family: "PF Din Text Comp Pro thin";
+  font-size: 38px;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 60px;
+  }
+}
+
+.clearance-sale__price {
+  font-family: "PF Din Text Comp Pro xthin";
+  font-size: 32px;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 50px;
+  }
+}
+
+.clearance-sale__button {
+  text-align: center;
+  line-height: 14px;
+  width: 45px;
+  height: 14px;
+  background-color: #ffffff;
+  color: #00a388;
+  font-family: "PF Din Text Comp Pro regular";
+  font-size: 12px;
+  position: absolute;
+  bottom: 14px;
+  left: 62px;
+
+  @media screen and (min-width: 1400px) {
+    width: 71px;
+    height: 19px;
+    font-size: 14px;
+    line-height: 19px;
+    bottom: 22px;
+    left: 100px;
+  }
+}

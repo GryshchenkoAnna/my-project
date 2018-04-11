@@ -487,15 +487,7 @@ figure {
   font-family: "PF Din Text Comp Pro xthin";
   font-size: 18px;
   text-transform: uppercase;
-}
-
-.menu__item:not(:last-child) {
-  margin-right: 24px;
-}
-
-.arrivals__image {
-  margin-left: auto;
-  margin-right: auto;
+  font-weight: 700;
 }
 
 .arrivals {
@@ -521,6 +513,16 @@ figure {
 
 .arrivals__word--big {
   font-size: 78px;
+}
+
+.arrivals__image {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.collection {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .collection__title {
@@ -567,11 +569,6 @@ figure {
   border-bottom: 1px solid #000000;
 }
 
-.collection {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .collection__container-images {
   margin-left: auto;
   margin-right: auto;
@@ -585,16 +582,6 @@ figure {
   width: 150px;
 }
 
-.slide-new-collection {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.gallery {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .gallery {
   display: flex;
   justify-content: space-between;
@@ -605,11 +592,6 @@ figure {
   background-color: #c9ede4;
   position: relative;
   margin-bottom: 10px;
-}
-
-.looks__image {
-  width: 116px;
-  height: 152px;
 }
 
 .looks__title {
@@ -632,13 +614,13 @@ figure {
   font-weight: 300;
 }
 
+.sale {
+  position: relative;
+}
+
 .sale__image {
   width: 116px;
   height: 245px;
-}
-
-.sale {
-  position: relative;
 }
 
 .sale__title {
@@ -671,23 +653,98 @@ figure {
   left: 26px;
 }
 
+.figure-ware {
+  height: 134px;
+  text-align: center;
+  position: relative;
+}
+
+.figure-ware__title {
+  position: relative;
+  z-index: 1;
+  padding-top: 8px;
+}
+
+.figure-ware__title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 54px;
+  width: 12px;
+  border-top: 1px solid #000000;
+  border-left: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  top: 0;
+  left: 10px;
+}
+
+.figure-ware__title::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 54px;
+  width: 12px;
+  border-top: 1px solid #000000;
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  top: 0;
+  right: 10px;
+}
+
+.figure-ware__word {
+  color: #000000;
+  font-family: "PF Din Text Comp Pro xthin";
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.figure-ware__word--big {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.price {
+  color: #000000;
+  font-family: "DIN Next LT Pro regular";
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.price__unit {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: -4.7px;
+}
+
+.price__number {
+  font-weight: 500;
+  letter-spacing: -1.45px;
+}
+
+.price__number--sub {
+  position: relative;
+  top: -14.5px;
+  margin-left: -9px;
+  font-size: 11px;
+}
+
 .clearance-sale {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .clearance-sale__contant {
   color: #ffffff;
   font-weight: 400;
   text-transform: uppercase;
-  position: absolute;
-  bottom: 90px;
-  left: 30px;
-}
-
-.clearance-sale__image {
-  width: 177px;
-  height: 264px;
 }
 
 .clearance-sale__title {
@@ -714,69 +771,78 @@ figure {
   left: 62px;
 }
 
-.gallery__box-first {
-  flex-basis: 38%;
+.line {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.gallery__box-second {
-  flex-basis: 59%;
+.slider {
+  display: flex;
+  justify-content: center;
 }
 
-.figure-ware__word {
+.slider-figure__image {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+}
+
+.slider-figure__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-figure__figcaption {
   color: #000000;
-  font-family: "PF Din Text Comp Pro xthin";
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 20px;
-  text-transform: none;
-}
-
-.figure-ware__word--big {
-  font-size: 24px;
-  text-transform: uppercase;
+  font-family: "DIN Next LT Pro regular";
+  font-size: 11px;
   font-weight: 700;
+  text-transform: uppercase;
+  flex-basis: 57%;
 }
 
-.figure-ware {
-  text-align: center;
+.slider-price {
+  color: #000000;
+  font-family: "DIN Next LT Pro regular";
+  font-size: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.figure-ware__title {
+.slider-price__unit {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -4.7px;
+}
+
+.slider-price__number--sub {
+  font-weight: 500;
   position: relative;
-  z-index: 1;
+  top: -18.5px;
+  margin-left: -9px;
+  font-size: 14px;
 }
 
-.figure-ware__title::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  height: 54px;
-  width: 12px;
-  border-top: 1px solid #000000;
-  border-left: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  top: -7px;
-  left: 10px;
+.note {
+  margin-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.figure-ware__title::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  height: 54px;
-  width: 12px;
-  border-top: 1px solid #000000;
-  border-right: 1px solid #000000;
-  border-bottom: 1px solid #000000;
-  top: -7px;
-  right: 10px;
+.note__text {
+  color: #9ca5aa;
+  font-family: "DIN Next LT Pro regular";
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.figure-ware__image {
-  width: 156px;
-  height: 122px;
-  position: absolute;
-  top: 0;
+.note__text--conceal {
+  font-size: 14px;
+  text-decoration: line-through;
+  font-size: 11px;
 }
 
 @media screen and (min-width: 320px) {
@@ -787,6 +853,12 @@ figure {
     margin-right: 10px;
     padding-top: 14px;
     padding-bottom: 14px;
+  }
+
+  .main-content {
+    padding-top: 14px;
+    padding-bottom: 270px;
+    background-color: #ffffff;
   }
 
   .header {
@@ -806,14 +878,19 @@ figure {
     height: 20px;
   }
 
-  .main-content {
-    padding-top: 14px;
-    background-color: #ffffff;
+  .menu {
+    display: none;
   }
 
-  .arrivals__image {
-    width: 300px;
-    height: 222px;
+  .menu__item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .slide-new-collection {
+    padding-bottom: 9px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .collection {
@@ -824,31 +901,96 @@ figure {
     padding-bottom: 12px;
   }
 
-  .slide-new-collection {
-    padding-bottom: 9px;
-    max-width: 300px;
+  .collection__image {
+    width: 150px;
   }
 
   .gallery {
     padding-top: 9px;
     max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery__box-first {
+    flex-basis: 38%;
+  }
+
+  .looks__image {
+    width: 116px;
+    height: 152px;
+  }
+
+  .sale__image {
+    width: 116px;
+    height: 245px;
+  }
+
+  .gallery__box-second {
+    flex-basis: 59%;
+  }
+
+  .figure-ware {
+    height: 134px;
+  }
+
+  .figure-ware__image {
+    width: 156px;
+    height: 134px;
+    position: absolute;
+    top: 0;
+  }
+
+  .clearance-sale__image {
+    width: 177px;
+    height: 264px;
+  }
+
+  .clearance-sale__contant {
+    position: absolute;
+    bottom: 90px;
+    left: 30px;
+  }
+
+  .line__title {
+    display: none;
+  }
+
+  .slider {
+    margin-top: 60px;
+  }
+
+  .slider-content {
+    flex-wrap: wrap;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   body {
     padding-top: 68px;
     position: relative;
+  }
+
+  .container {
+    max-width: 768px;
   }
 
   .wrapper {
     margin-left: 0;
     margin-right: 0;
     border-top: 1px solid #f4f4e6;
+  }
+
+  .main-content {
+    padding-top: 33px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 218px;
+  }
+
+  .main-content__collection {
+    display: flex;
+    justify-content: space-between;
   }
 
   .header {
@@ -869,28 +1011,110 @@ figure {
     top: 18px;
   }
 
-  .main-content {
-    padding-top: 33px;
-  }
-
-  .arrivals__image {
-    width: 475px;
-    height: 351px;
+  .slide-new-collection {
+    padding-bottom: 0;
+    margin: 0;
+    margin-right: 5px;
+    max-width: 100%;
   }
 
   .collection {
     display: flex;
   }
-}
 
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1400px;
+  .collection__image {
+    width: 180px;
   }
 
+  .gallery {
+    padding-top: 0;
+    margin: 0;
+    margin-left: 5px;
+    max-width: 100%;
+  }
+
+  .gallery__box-first {
+    margin-right: 5px;
+  }
+
+  .looks__image {
+    width: 116px;
+    height: 191px;
+  }
+
+  .sale__image {
+    width: 116px;
+    height: 286px;
+  }
+
+  .gallery__box-second {
+    margin-left: 5px;
+  }
+
+  .figure-ware {
+    height: 160px;
+  }
+
+  .figure-ware__image {
+    width: 177px;
+    height: 161px;
+  }
+
+  .clearance-sale__image {
+    width: 177px;
+    height: 316px;
+  }
+
+  .clearance-sale__contant {
+    bottom: 118px;
+  }
+
+  .line {
+    height: 1px;
+    background-color: #ff6138;
+    position: relative;
+    margin-bottom: 48px;
+    margin-top: 54px;
+  }
+
+  .line__title {
+    display: block;
+    width: 206px;
+    height: 42px;
+    background-color: #ff6138;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #ffffff;
+    font-family: "PF Din Text Comp Pro thin";
+    font-size: 34px;
+    font-weight: 100;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .slider-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider-figure {
+    flex-basis: 23%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
   body {
     padding-top: 68px;
     position: relative;
+  }
+
+  .container {
+    max-width: 1400px;
   }
 
   .wrapper {
@@ -898,34 +1122,185 @@ figure {
     margin-right: 0;
   }
 
+  .main-content {
+    padding-top: 33px;
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-bottom: 218px;
+  }
+
   .header {
     padding-right: 220px;
     padding-left: 220px;
   }
 
-  .burger-menu {
-    display: none;
+  .menu__item:not(:last-child) {
+    margin-right: 74px;
+    letter-spacing: 1px;
   }
 
-  .menu {
-    display: block;
+  .arrivals__title {
+    top: 40px;
+    left: 36px;
+    line-height: 73px;
   }
 
-  .logo {
-    position: absolute;
-    top: 18px;
+  .arrivals__word {
+    font-size: 61px;
   }
 
-  .main-content {
-    padding-top: 33px;
-  }
-
-  .arrivals__image {
-    width: 475px;
-    height: 351px;
+  .arrivals__word--big {
+    font-size: 123px;
   }
 
   .collection {
     display: flex;
+  }
+
+  .collection__title {
+    line-height: 46px;
+  }
+
+  .collection__word {
+    font-size: 56px;
+  }
+
+  .collection__word--big {
+    font-size: 60px;
+  }
+
+  .collection__description {
+    font-size: 14px;
+    line-height: 19px;
+    flex-basis: 54%;
+  }
+
+  .collection__description::before {
+    height: 87px;
+  }
+
+  .collection__image {
+    width: 232px;
+  }
+
+  .looks__image {
+    width: 184px;
+    height: 240px;
+  }
+
+  .looks__title {
+    left: 72px;
+    line-height: 19px;
+  }
+
+  .looks__word {
+    font-size: 20px;
+  }
+
+  .looks__word--big {
+    font-size: 51px;
+  }
+
+  .sale__image {
+    width: 184px;
+    height: 389px;
+  }
+
+  .sale__title {
+    width: 120px;
+    font-size: 46px;
+    line-height: 40.37px;
+    bottom: 82px;
+    left: 32px;
+  }
+
+  .sale__button {
+    width: 96px;
+    height: 18px;
+    font-size: 14px;
+    line-height: 18px;
+    left: 44px;
+  }
+
+  .figure-ware {
+    height: 212px;
+  }
+
+  .figure-ware__title {
+    padding-top: 16px;
+  }
+
+  .figure-ware__title::before {
+    height: 86px;
+  }
+
+  .figure-ware__title::after {
+    height: 86px;
+  }
+
+  .figure-ware__word {
+    font-size: 38px;
+    line-height: 28px;
+  }
+
+  .figure-ware__image {
+    width: 247px;
+    height: 211px;
+  }
+
+  .price {
+    font-size: 36px;
+  }
+
+  .price__unit {
+    font-size: 18px;
+  }
+
+  .price__number--sub {
+    font-size: 18px;
+  }
+
+  .clearance-sale__image {
+    width: 279px;
+    height: 416px;
+  }
+
+  .clearance-sale__contant {
+    bottom: 140px;
+    left: 48px;
+  }
+
+  .clearance-sale__title {
+    font-size: 60px;
+  }
+
+  .clearance-sale__price {
+    font-size: 50px;
+  }
+
+  .clearance-sale__button {
+    width: 71px;
+    height: 19px;
+    font-size: 14px;
+    line-height: 19px;
+    bottom: 22px;
+    left: 100px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .slider-figure {
+    width: 185px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .slider-figure:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .slider-figure__image {
+    width: 185px;
+    height: 270px;
   }
 }
