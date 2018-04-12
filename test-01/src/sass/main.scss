@@ -53,15 +53,13 @@ body {
 
   @media screen and (min-width: 768px) {
     padding-top: 33px;
-    padding-left: 60px;
-    padding-right: 60px;
     padding-bottom: 218px;
   }
   @media screen and (min-width: 1400px) {
     padding-top: 33px;
-    padding-left: 220px;
-    padding-right: 220px;
     padding-bottom: 218px;
+    max-width: 960px;
+    margin: auto;
   }
 }
 
@@ -69,5 +67,7 @@ body {
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    max-width: 672px;
+    margin: auto;
   }
 }

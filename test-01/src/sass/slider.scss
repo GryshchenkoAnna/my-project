@@ -1,10 +1,6 @@
 .slider {
   display: flex;
   justify-content: center;
-
-  @media screen and (min-width: 320px) {
-    margin-top: 60px;
-  }
 }
 
 .slider-content {
@@ -14,6 +10,13 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    max-width: 740px;
+    margin: auto;
+  }
+
+  @media screen and (min-width: 1400px) {
+    max-width: 858px;
+    margin: auto;
   }
 }
 
